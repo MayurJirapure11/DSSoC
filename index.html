@@ -11,7 +11,7 @@
         content="Join us for an exciting debate competition featuring 16 teams in a one-on-one format, merging local traditions with Greek mythology.">
 
     <meta name="keywords"
-        content="debate, kkwagh, kkwagh techsabha, kkwagh debate, kkwagh competetion, kkwagh engg, kkwagh engineering ,competition, TechSabha, Greek mythology, local traditions, gram panchayat">
+        content="debate, kkwagh, kkwagh techsabha, techsabha kkwagh, kkwagh debate, kkwagh competetion, kkwagh engg, kkwagh engineering ,competition, TechSabha, Greek mythology, local traditions, gram panchayat">
 
     <meta property="og:title" content="TechSabha: A Unique Debate Experience">
     <meta property="og:description"
@@ -25,9 +25,9 @@
     <meta name="twitter:title" content="TechSabha: A Unique Debate Experience">
     <meta name="twitter:description"
         content="Join us for an exciting debate competition featuring 16 teams in a one-on-one format.">
-    <meta name="twitter:image" content="https://techsabha.netlify.app/Image/Logo.png"> <!-- Logo for Twitter -->
+    <meta name="twitter:image" content="https://techsabha.netlify.app/Image/poster.jpeg"> <!-- Logo for Twitter -->
 
-    <meta property="og:image" content="https://techsabha.netlify.app/Image/Logo.png">
+    <meta property="og:image" content="https://techsabha.netlify.app/Image/poster.jpeg">
     <!-- Different image for WhatsApp crawler -->
 
     <link rel="icon" href="./Image/icon.png" type="image/png">
@@ -39,9 +39,15 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <style>
-        body {
-            font-family: "Pixelify Sans", sans-serif;
-            font-weight: 500;
+        .play-regular {
+            font-family: "Play", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .play-bold {
+            font-family: "Play", sans-serif;
+            font-weight: 700;
             font-style: normal;
         }
 
@@ -51,18 +57,12 @@
             font-style: normal;
         }
 
-        
-
         .card-drop {
             position: relative;
             width: 200px;
-            /* Adjust as needed */
             height: 100px;
-            /* Adjust as needed */
             background: #f8f8f8;
-            /* Background color of the card */
             border: 1px solid #ddd;
-            /* Border of the card */
             border-radius: 8px;
             padding: 16px;
             text-align: center;
@@ -85,11 +85,8 @@
         .typing {
             border-right: 2px solid white;
             white-space: wrap;
-            /* Corrected property */
             overflow: hidden;
-            /* Keeps the content from overflowing */
             display: inline-block;
-            /* Allows the width to fit the content */
             animation: blink-caret 0.75s step-end infinite;
         }
 
@@ -105,7 +102,6 @@
             }
         }
 
-        /* Disintegration Effect */
         .disintegrate {
             position: relative;
         }
@@ -118,13 +114,10 @@
             right: 0;
             bottom: 0;
             background-image: url('./Image/TECHSABHA.svg');
-            /* Use same image as the main one */
             background-size: cover;
             z-index: 1;
-            /* Ensure it's above the main image */
             animation: disintegrateAnimation 2s forwards;
             opacity: 0;
-            /* Initially hide the overlay image */
         }
 
         @keyframes disintegrateAnimation {
@@ -141,53 +134,35 @@
 
         .disintegrate:hover::before {
             animation: none;
-            /* Pause animation on hover */
             opacity: 1;
-            /* Show the overlay image on hover */
+            
         }
-
-        
-        .nav-bar {
-            background-color: #1e96fc; /* Initial color */
-          }
 
         .hover:text-blue-400 {
             color: #ee0629;
         }
-
-        .bg-blueu {
-            background-color: #00509d;
-        }
-
-        .bg-bluey {
-            background-color:#1e96fc ;
-        }
-
-        .bg-cream {
-            background-color: #0d0a0b;
-        }
     </style>
 </head>
 
-<body class="text-white bg-bluey">
+<body class="text-white play-regular m-0 p-0" style="background-color: #00b4d8;">
 
-    <nav class="bg-blueu flex md:flex-row justify-between items-center gap-4 relative top-0 shadow-lg z-50 p-4">
+    <nav class="flex md:flex-row justify-between items-center gap-4 relative top-0 shadow-lg z-50 p-4"
+        style="background-color: #023047;">
         <div>
-          <a href="#home" class="flex items-center gap-2 text-2xl font-light text-white">
-            <img src="./Image/DESOC.png" alt="Desoc" class="h-8">
-            <img src="./Image/Phoenix.png" alt="Phoenix" class="h-8">
-          </a>
+            <a href="#home" class="flex items-center gap-2 text-2xl font-light text-white">
+                <img src="./Image/DESOC.png" alt="Desoc" class="h-8">
+                <img src="./Image/Phoenix.png" alt="Phoenix" class="h-8">
+            </a>
         </div>
         <div class="flex gap-4 mt-2 md:mt-0">
-          <a href="#home" class="hover:text-blue-400 hover:underline transition">Home</a>
-          <a href="#about" class="hover:text-blue-400 hover:underline transition">About</a>
-          <a href="#us" class="hover:text-blue-400 hover:underline transition">Contact Us</a>
+            <a href="#home" class="hover:text-blue-400 hover:underline transition">Home</a>
+            <a href="#about" class="hover:text-blue-400 hover:underline transition">About</a>
+            <a href="#us" class="hover:text-blue-400 hover:underline transition">Contact Us</a>
         </div>
-      </nav>
+    </nav>
 
-    <main class="wrap">
-        <section
-            class=" p-5 text-center min-h-screen flex flex-col items-center justify-center relative wrap over-hidden "
+    <main >
+        <section class=" text-center flex flex-col p-5 items-center justify-center relative m-0"
             id="home">
             <h1 class="text-3xl w-fit jersey-fonty md:text-6xl md:w-[75%] font-bold mb-4 reveal-left">Welcome to
                 TechSabha</h1>
@@ -199,8 +174,9 @@
                 of Greek mythology.</p>
         </section>
 
-        <section class="min-h-screen flex flex-col items-center justify-center bg-blueu p-5" id="about">
-            <h1 class="text-4xl md:text-5xl font-semibold mb-4 reveal-top text-center">About the Event</h1>
+        <section class="min-h-screen flex flex-col items-center justify-center p-5" id="about"
+            style="background-color: #2c7da0;">
+            <h1 class="text-4xl md:text-5xl font-semibold mb-4 reveal-top text-center jersey-fonty">About the Event</h1>
             <img src="./Image/TECHSABHA.svg" alt="TechSabha Logo" class="w-64 md:w-80 mb-4 disintegrate reveal-fade">
             <p class="mt-2 text-center w-full md:w-2/3 reveal-bottom" data-sr-delay="300">Join us for an exciting debate
                 competition featuring 16 teams in a one-on-one format. Experience the thrill of competition while
@@ -221,7 +197,7 @@
             </div>
         </section>
 
-        <section class="min-h-screen flex flex-col items-center justify-center relative bg-bluey p-5 overflow-hidden"
+        <section class="min-h-screen flex flex-col items-center justify-center relative bg-bluey p-5 overflow-hidden" style="background-color: #219ebc;"
             id="us">
             <div class=" absolute w-full h-full flex justify-between z-0">
                 <img src="./Image/pilll.svg" alt="" height="550px" class="hidden absolute left-0 md:block"
@@ -229,7 +205,8 @@
                 <img src="./Image/pillr.svg" alt="" height="550px" class="hidden absolute right-0 md:block"
                     data-sr-delay="300">
             </div>
-            <h2 class="text-3xl md:text-4xl font-semibold mb-6 reveal-bottom" data-sr-delay="600">Organised By</h2>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6 reveal-bottom jersey-fonty" data-sr-delay="600">Organised
+                By</h2>
             <div class="flex flex-col md:flex-row gap-8 reveal-fade z-10" data-sr-delay="900">
                 <div class="flex flex-col text-center items-center">
                     <a href="https://www.instagram.com/desoc.kkwieer?utm_source=ig_web_button_share_sheet"
@@ -251,7 +228,7 @@
         </section>
     </main>
 
-    <footer class="bg-cream p-5 text-center">
+    <footer class="p-5 text-center" style="background-color: #023047;">
         <p>&copy; 2024 TechSabha. All rights reserved.</p>
     </footer>
 
@@ -264,34 +241,34 @@
 
         const countdownDate = new Date("October 7, 2024 17:00:00").getTime();
         const timerElement = document.getElementById("timer");
-        const registrationFormURL = "https://shorturl.at/avRFm"; // Replace with your actual form link
-        
-        const x = setInterval(function() {
-          const now = new Date().getTime();
-          const distance = countdownDate - now;
-        
-          if (distance < 0) {
-            clearInterval(x);
-            timerElement.innerHTML = "Registration Open!";
-            registerButton.disabled = false;
-            registerButton.classList.remove('bg-gray-500', 'opacity-75', 'cursor-not-allowed');
-            registerButton.classList.add('bg-green-500', 'hover:bg-green-600');
-            registerButton.innerText = 'Register Now';
-        
-            // Add event listener to redirect when the button is clicked
-            registerButton.onclick = function() {
-              window.location.href = registrationFormURL;
-            };
-        
-            return;
-          }
-        
-          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-          timerElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        const registrationFormURL = "https://shorturl.at/avRFm"; 
+
+        const x = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            if (distance < 0) {
+                clearInterval(x);
+                timerElement.innerHTML = "Registration Open!";
+                registerButton.disabled = false;
+                registerButton.classList.remove('bg-gray-500', 'opacity-75', 'cursor-not-allowed');
+                registerButton.classList.add('bg-green-500', 'hover:bg-green-600');
+                registerButton.innerText = 'Register Now';
+
+                
+                registerButton.onclick = function () {
+                    window.location.href = registrationFormURL;
+                };
+
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            timerElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
         }, 1000);
 
         document.addEventListener("DOMContentLoaded", function () {
@@ -299,7 +276,7 @@
 
             headings.forEach((heading) => {
                 const text = heading.innerText;
-                heading.innerHTML = '<span class="typing"></span>'; // Use a span to apply the typing effect
+                heading.innerHTML = '<span class="typing"></span>'; 
                 let index = 0;
                 const span = heading.querySelector('.typing');
 
@@ -307,7 +284,7 @@
                     if (index < text.length) {
                         span.innerHTML += text.charAt(index);
                         index++;
-                        setTimeout(type, 100); // Adjust speed as needed
+                        setTimeout(type, 100); 
                     }
                 }
 
@@ -324,7 +301,7 @@
                 scale: 1.00,
                 scaleMobile: 1.00,
                 color: 0xffffff,
-                backgroundColor: 0x1e96fc,
+                backgroundColor: 0x00b4d8,
                 points: 14.00,
                 maxDistance: 14.00,
                 spacing: 16.00
